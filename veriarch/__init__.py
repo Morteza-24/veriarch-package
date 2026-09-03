@@ -10,6 +10,8 @@ convergence or a round limit, producing a final decomposition plus an
 auditable rationale trace.
 """
 
+__version__ = "0.1.0"
+
 from .config import VeriArchConfig  # noqa: F401
 from .run_in_colab import run_in_colab
 from .run_with_api import run_with_api

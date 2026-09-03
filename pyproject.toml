@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >=3.12,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "veriarch"
+authors = [
+  {name = "Morteza Ziabakhsh", email = "morteza24mail@protonmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+dynamic = ["version", "description"]
+
+dependencies = [
+  # Core (required)
+  "numpy>=1.24",
+
+  # Repository parsing
+  "javalang>=0.13.0",
+
+  # Semantic embeddings (falls back to scikit-learn TF-IDF+SVD if unavailable)
+  "torch>=2.0",
+  "transformers>=4.30",
+  "scikit-learn>=1.2",
+
+  # LLM backends
+  "anthropic>=0.34",
+  "requests>=2.31",
+]

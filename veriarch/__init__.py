@@ -11,3 +11,5 @@ auditable rationale trace.
 """
 
 from .config import VeriArchConfig  # noqa: F401
+from .run_in_colab import run_in_colab
+from .run_with_api import run_with_api
